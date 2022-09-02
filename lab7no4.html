@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function countTheWord(str) {
+        var c = 0;
+        var s = str.split(" ");
+        var arr = [];
+
+        for (var i = 0; i < s.length; i++) {
+          arr.push(s[i]);
+        }
+        console.log(arr);
+        for (var i = 0; i < s.length; i++) {
+          if ((arr[i] == "the") | (arr[i] == "The")) {
+            c += 1;
+          }
+        }
+        console.log(c);
+
+        alert("มี the ทั้งหมด " + c + " คำ");
+      }
+    </script>
+  </head>
+  <body>
+    The eighth ruler of the Fifth Dynasty in the late 25th century. <br /><br />
+    <a
+      href="#"
+      onclick="countTheWord('The eighth ruler of the Fifth Dynasty in the late 25th century')"
+      >Click for count 'the'</a
+    >
+  </body>
+</html>
